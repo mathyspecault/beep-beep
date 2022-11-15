@@ -17,6 +17,25 @@ function programme_5 () {
         beep()
     }
 }
+function programme_6 () {
+    if (input.buttonIsPressed(Button.A)) {
+        N = 180
+        while (N > 0) {
+            basic.showNumber(N)
+            N = N - 1
+            basic.pause(1000)
+        }
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        beep()
+        beep()
+    }
+}
 function programme4 () {
     po = pins.analogReadPin(AnalogPin.P0)
     LDR = pins.analogReadPin(AnalogPin.P1)
